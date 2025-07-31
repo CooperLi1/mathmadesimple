@@ -2,11 +2,83 @@
 
 import { FaStar, FaExternalLinkAlt } from 'react-icons/fa'
 
-const placeholderStaff = Array.from({ length: 6 }, (_, i) => ({
-  name: `Staff Member ${i + 1}`,
-  image: `/placeholder.jpg`, // Put real images in /public
-  bio: `This is a short bio about Staff Member ${i + 1}. They're passionate about math, mentoring, and helping students grow.`,
-}))
+const placeholderStaff = [
+  {
+    name: "Keshav Harpavat",
+    image: "/keshavharpavat.png",
+    bio: "Founder, President, Strake Jesuit College Preparatory School",
+  },
+  {
+    name: "Ian Ngo",
+    image: "/ianngo.png",
+    bio: "Vice President, Co-Founder of Community Events, Strake Jesuit College Preparatory School",
+  },
+  {
+    name: "Roger Li",
+    image: "/rogerli.png",
+    bio: "Vice President, Strake Jesuit College Preparatory School",
+  },
+  {
+    name: "Mac Stratton",
+    image: "/macstratton.png",
+    bio: "Vice President, Strake Jesuit College Preparatory School",
+  },
+  {
+    name: "Anika Harpavat",
+    image: "/anikaharpavat.jpg",
+    bio: "Stanford University",
+  },
+  {
+    name: "Aarav Mahendru",
+    image: "/aaravmahendru.jpg",
+    bio: "Lamar High School",
+  },
+    {
+    name: "Aaron Wang",
+    image: "/aaronwang.jpg",
+    bio: "Strake Jesuit College Preparatory School",
+  },
+  {
+    name: "Tyler Horvath",
+    image: "/tylerhorvath.jpg",
+    bio: "Strake Jesuit College Preparatory School",
+  },
+  {
+    name: "Gabriel Fernandes",
+    image: "/gabrielfernandes.jpg",
+    bio: "Purdue University",
+  },
+  {
+    name: "Faysal Alameddine",
+    image: "/faysalalameddine.jpg",
+    bio: "Georgetown University",
+  },
+  {
+    name: "Clare Hayes",
+    image: "/clarehayes.jpg",
+    bio: "Incarnate Word Academy",
+  },
+  {
+    name: "Ani Bellows",
+    image: "/anibellows.jpg",
+    bio: "UT Austin",
+  },
+  {
+    name: "Kevin Chen",
+    image: "/kevinchen.png",
+    bio: "Stanford University",
+  },
+  {
+    name: "Mateo Varcarcel",
+    image: "/mateovarcarcel.png",
+    bio: "Texas A&M University",
+  },
+  {
+    name: "Amar Singh",
+    image: "/amarsingh.jpg",
+    bio: "Southwestern University",
+  }
+];
 
 export default function StaffPage() {
   return (
@@ -37,34 +109,47 @@ export default function StaffPage() {
       </div>
 
       {/* Reviews Section */}
-      <div className="bg-white p-8 rounded-xl shadow-md max-w-5xl mx-auto">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">What Parents Are Saying</h2>
-        <div className="flex justify-center space-x-1 text-yellow-400 text-2xl mb-6">
-          {[...Array(5)].map((_, i) => (
-            <FaStar key={i} />
-          ))}
+<div className="bg-white p-8 rounded-xl shadow-md max-w-5xl mx-auto">
+  <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">What Parents Are Saying</h2>
+  <div className="flex justify-center space-x-1 text-yellow-400 text-2xl mb-6">
+    {[...Array(5)].map((_, i) => (
+      <FaStar key={i} />
+    ))}
+  </div>
+  <div className="grid md:grid-cols-3 gap-6">
+    {[
+      {
+        name: 'Parent A',
+        quote: 'My son said he learned a lot. It was nice he took his shoes off. Very polite.',
+      },
+      {
+        name: 'Parent B',
+        quote:
+          'He got along well with the children and kept them engaged, which is sometimes a challenge!',
+      },
+      {
+        name: 'Parent C',
+        quote:
+          'Prepared for the session, Eased in well with the kid, Connected well, Calm and Composed, Patient',
+      },
+    ].map((review, idx) => (
+      <div
+        key={idx}
+        className="bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col justify-between"
+      >
+        <div>
+          <h3 className="font-semibold text-lg mb-1">{review.name}</h3>
+          <p className="text-sm text-gray-600 italic">“{review.quote}”</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((i) => (
-            <div
-              key={i}
-              className="bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col justify-between"
-            >
-              <div>
-                <h3 className="font-semibold text-lg mb-1">Parent {i}</h3>
-                <p className="text-sm text-gray-600 italic">
-                  “This program really helped my child build confidence in math. The instructors are amazing!”
-                </p>
-              </div>
-              <div className="mt-3 flex text-yellow-400 text-lg">
-                {[...Array(5)].map((_, j) => (
-                  <FaStar key={j} />
-                ))}
-              </div>
-            </div>
+        <div className="mt-3 flex text-yellow-400 text-lg">
+          {[...Array(5)].map((_, j) => (
+            <FaStar key={j} />
           ))}
         </div>
       </div>
+    ))}
+  </div>
+</div>
 
       {/* Book a Session Reminder */}
       <div className="text-center">

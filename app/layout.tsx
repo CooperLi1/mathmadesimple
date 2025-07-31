@@ -8,10 +8,14 @@ export const metadata = {
   title: 'Math Made Simple',
   description: 'Explore. Understand. Thrive.',
 }
-
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Math Made Simple</title>
+        <meta name="description" content="Explore. Understand. Thrive." />
+      </head>
       <body className="relative text-gray-100">
         {/* Background image */}
         <div

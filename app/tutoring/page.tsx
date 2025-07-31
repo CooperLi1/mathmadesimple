@@ -56,7 +56,7 @@ export default function TutoringPage() {
       {/* Google Form Link */}
       <div className="mt-6">
         <a
-          href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
+          href="https://forms.gle/Gkq6Ru6uBLEX7kV29"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-md shadow-md transition"
@@ -64,36 +64,49 @@ export default function TutoringPage() {
           Fill Out Google Form to Get Started <FaExternalLinkAlt />
         </a>
       </div>
-
-      {/* Extra Reviews */}
-      <div className="bg-white p-8 rounded-xl shadow-md max-w-5xl mx-auto">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">What Parents Are Saying</h2>
-        <div className="flex justify-center space-x-1 text-yellow-400 text-2xl mb-6">
-          {[...Array(5)].map((_, i) => (
-            <FaStar key={i} />
-          ))}
+{/* Reviews Section */}
+<div className="bg-white p-8 rounded-xl shadow-md max-w-5xl mx-auto">
+  <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">What Parents Are Saying</h2>
+  <div className="flex justify-center space-x-1 text-yellow-400 text-2xl mb-6">
+    {[...Array(5)].map((_, i) => (
+      <FaStar key={i} />
+    ))}
+  </div>
+  <div className="grid md:grid-cols-3 gap-6">
+    {[
+      {
+        name: 'Parent A',
+        quote: 'My son said he learned a lot. It was nice he took his shoes off. Very polite.',
+      },
+      {
+        name: 'Parent B',
+        quote:
+          'He got along well with the children and kept them engaged, which is sometimes a challenge!',
+      },
+      {
+        name: 'Parent C',
+        quote:
+          'Prepared for the session, Eased in well with the kid, Connected well, Calm and Composed, Patient',
+      },
+    ].map((review, idx) => (
+      <div
+        key={idx}
+        className="bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col justify-between"
+      >
+        <div>
+          <h3 className="font-semibold text-lg mb-1">{review.name}</h3>
+          <p className="text-sm text-gray-600 italic">“{review.quote}”</p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[4, 5, 6].map((i) => (
-            <div
-              key={i}
-              className="bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col justify-between"
-            >
-              <div>
-                <h3 className="font-semibold text-lg mb-1">Parent {i}</h3>
-                <p className="text-sm text-gray-600 italic">
-                  “My child’s confidence in math skyrocketed after just a few sessions!”
-                </p>
-              </div>
-              <div className="mt-3 flex text-yellow-400 text-lg">
-                {[...Array(5)].map((_, j) => (
-                  <FaStar key={j} />
-                ))}
-              </div>
-            </div>
+        <div className="mt-3 flex text-yellow-400 text-lg">
+          {[...Array(5)].map((_, j) => (
+            <FaStar key={j} />
           ))}
         </div>
       </div>
+    ))}
+  </div>
+</div>
+
 
       {/* Footer */}
       <footer className="text-sm text-gray-700 pt-12">

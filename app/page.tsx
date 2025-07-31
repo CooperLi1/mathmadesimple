@@ -24,9 +24,15 @@ export default function HomePage() {
         </p>
       </section>
 
-      <p className="text-gray-600 italic">
-        (Insert statistic on doc about percent growth of a student)
-      </p>
+<div className="max-w-md mx-auto space-y-2">
+  <img
+    src="/growth.png"
+    alt="Student growth chart"
+    className="rounded-lg shadow-md w-full"
+  />
+  <p className="text-sm italic text-gray-600">Note: it goes over 100 because of extra credit</p>
+</div>
+
 {/* From the Parents - Combined Section */}
 <div className="bg-white p-8 rounded-xl shadow-md max-w-5xl mx-auto">
   <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">From the Parents:</h2>
@@ -36,28 +42,40 @@ export default function HomePage() {
     ))}
   </div>
 
-  {/* Review Grid Inside the Box */}
-  <div className="grid md:grid-cols-3 gap-6">
-    {[1, 2, 3].map((i) => (
-      <div
-        key={i}
-        className="bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col justify-between"
-      >
-        <div>
-          <h3 className="font-semibold text-lg mb-1">Parent {i}</h3>
-          <p className="text-sm text-gray-600 italic">
-            “This program really helped my child build confidence in math. The instructors are
-            amazing!”
-          </p>
-        </div>
-        <div className="mt-3 flex text-yellow-400 text-lg">
-          {[...Array(5)].map((_, j) => (
-            <FaStar key={j} />
-          ))}
-        </div>
+{/* Review Grid Inside the Box */}
+<div className="grid md:grid-cols-3 gap-6">
+  {[
+    {
+      name: 'Parent A',
+      quote: 'My son said he learned a lot. It was nice he took his shoes off. Very polite.',
+    },
+    {
+      name: 'Parent B',
+      quote:
+        'He got along well with the children and kept them engaged, which is sometimes a challenge!',
+    },
+    {
+      name: 'Parent C',
+      quote:
+        'Prepared for the session, Eased in well with the kid, Connected well, Calm and Composed, Patient',
+    },
+  ].map((review, i) => (
+    <div
+      key={i}
+      className="bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col justify-between"
+    >
+      <div>
+        <h3 className="font-semibold text-lg mb-1">{review.name}</h3>
+        <p className="text-sm text-gray-600 italic">“{review.quote}”</p>
       </div>
-    ))}
-  </div>
+      <div className="mt-3 flex text-yellow-400 text-lg">
+        {[...Array(5)].map((_, j) => (
+          <FaStar key={j} />
+        ))}
+      </div>
+    </div>
+  ))}
+</div>
 </div>
 
       {/* Contact Info */}

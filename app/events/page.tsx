@@ -28,13 +28,21 @@ export default function EventsPage() {
   return (
     <div className="text-center space-y-10 text-gray-800">
       {/* Title */}
-      <div>
-        <h1 className="text-4xl font-bold mb-4">Community Events</h1>
-        <p className="text-lg max-w-3xl mx-auto">
-          In partnership with the <strong>Houston Multicultural Center</strong>, we offer free tutoring
-          and mentorship to Afghan refugee youth who fled the Taliban.
-        </p>
-      </div>
+<div>
+  <h1 className="text-4xl font-bold mb-4">Community Events</h1>
+  <p className="text-lg max-w-3xl mx-auto">
+    In partnership with the{' '}
+    <a
+      href="https://www.volunteerhou.org/agency/detail/?agency_id=163363"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-700 underline hover:text-blue-900 font-medium"
+    >
+      Houston Multicultural Center
+    </a>
+    , we offer free tutoring and mentorship to Afghan refugee youth who fled the Taliban.
+  </p>
+</div>
 
       {/* Carousel and Description */}
       <section className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
