@@ -25,7 +25,7 @@ const placeholderStaff = [
   },
   {
     name: "Anika Harpavat",
-    image: "/anikaharpavat.jpg",
+    image: "/anikaharpavat.png",
     bio: "Stanford University",
   },
   {
@@ -40,8 +40,8 @@ const placeholderStaff = [
   },
   {
     name: "Tyler Horvath",
-    image: "/tylerhorvath.jpg",
-    bio: "Strake Jesuit College Preparatory School",
+    image: "/tylerhorvath.png",
+    bio: "Lamar High School",
   },
   {
     name: "Gabriel Fernandes",
@@ -75,7 +75,7 @@ const placeholderStaff = [
   },
   {
     name: "Amar Singh",
-    image: "/amarsingh.jpg",
+    image: "/amarsingh.png",
     bio: "Southwestern University",
   }
 ];
