@@ -10,6 +10,10 @@ const images = [
   '/carousel4.jpg',
   '/carousel5.jpg',
   '/carousel6.jpg',
+  '/carousel7.jpg',
+  '/carousel8.jpg',
+  '/carousel9.jpg',
+  '/carousel10.jpg',
 ]
 
 export default function EventsPage() {
