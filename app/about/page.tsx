@@ -16,12 +16,12 @@ const placeholderStaff = [
   {
     name: "Roger Li",
     image: "/rogerli.png",
-    bio: "Vice President, Strake Jesuit College Preparatory School",
+    bio: "Strake Jesuit College Preparatory School",
   },
   {
     name: "Mac Stratton",
     image: "/macstratton.png",
-    bio: "Vice President, Strake Jesuit College Preparatory School",
+    bio: "Strake Jesuit College Preparatory School",
   },
   {
     name: "Anika Harpavat",
@@ -61,7 +61,7 @@ const placeholderStaff = [
   {
     name: "Ani Bellows",
     image: "/anibellows.jpg",
-    bio: "UT Austin",
+    bio: "University of Texas at Austin",
   },
   {
     name: "Kevin Chen",
@@ -119,18 +119,18 @@ export default function StaffPage() {
   <div className="grid md:grid-cols-3 gap-6">
     {[
       {
-        name: 'Parent A',
-        quote: 'My son said he learned a lot. It was nice he took his shoes off. Very polite.',
+        name: 'High School Parent, Woodlands',
+        quote: 'I really liked how personalized the teaching was. It felt that my son had his own private tutor.',
       },
       {
-        name: 'Parent B',
+        name: 'Middle School Parent, West U',
         quote:
-          'He got along well with the children and kept them engaged, which is sometimes a challenge!',
+          'My son actually looks forward to the sessions now!',
       },
       {
-        name: 'Parent C',
+        name: 'High School Parent, Bellaire',
         quote:
-          'Prepared for the session, Eased in well with the kid, Connected well, Calm and Composed, Patient',
+          'I like how readily available the tutor was - he was always there to help my son.',
       },
     ].map((review, idx) => (
       <div

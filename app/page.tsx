@@ -13,7 +13,7 @@ export default function HomePage() {
 
       <section className="text-gray-700 max-w-3xl mx-auto text-base leading-relaxed">
         <p>
-          <strong className="font-semibold">Description:</strong>{' '}
+          <strong className="font-semibold"></strong>{' '}
           Math Made Simple is an organization dedicated to helping students find joy in problem-solving and tackling difficult math questions. We believe that while math can be tedious and requires patience, it becomes incredibly rewarding, and even fun, once students begin to understand and master it. Our goal is to guide students through that journey—building confidence, curiosity, and a love for learning through engaging and thoughtful instruction.
         </p>
       </section>
@@ -46,16 +46,16 @@ export default function HomePage() {
 <div className="grid md:grid-cols-3 gap-6">
   {[
     {
-      name: 'Parent A',
+      name: 'Middle School Parent, Bellaire',
       quote: 'My son said he learned a lot. It was nice he took his shoes off. Very polite.',
     },
     {
-      name: 'Parent B',
+      name: 'Lower School Parent, West U',
       quote:
         'He got along well with the children and kept them engaged, which is sometimes a challenge!',
     },
     {
-      name: 'Parent C',
+      name: 'Middle School Parent, Sugar Land',
       quote:
         'Prepared for the session, Eased in well with the kid, Connected well, Calm and Composed, Patient',
     },

@@ -88,18 +88,18 @@ export default function TutoringPage() {
   <div className="grid md:grid-cols-3 gap-6">
     {[
       {
-        name: 'Parent A',
-        quote: 'My son said he learned a lot. It was nice he took his shoes off. Very polite.',
+        name: 'Lower School Parent, Bellaire',
+        quote: 'My daughter struggled with math, but gradually grew confident and made a great friend in her mentor',
       },
       {
-        name: 'Parent B',
+        name: 'High School, Pearland',
         quote:
-          'He got along well with the children and kept them engaged, which is sometimes a challenge!',
+          'My son’s grade in Pre-calculus started at a C+, and with some help, ended the semester with an A-',
       },
       {
-        name: 'Parent C',
+        name: 'Middle School, Katy',
         quote:
-          'Prepared for the session, Eased in well with the kid, Connected well, Calm and Composed, Patient',
+          'Our mentor was respectful and excited to help my son.',
       },
     ].map((review, idx) => (
       <div
