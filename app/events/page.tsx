@@ -44,7 +44,7 @@ export default function EventsPage() {
     >
       Houston Multicultural Center
     </a>
-    , we offer free tutoring and mentorship to Afghan refugee youth who fled the Taliban.
+    , we offer free tutoring and mentorship to Afghan refugee youth who fled the Taliban in 2021.
   </p>
 </div>
 
