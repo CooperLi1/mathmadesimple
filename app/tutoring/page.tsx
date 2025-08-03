@@ -92,12 +92,12 @@ export default function TutoringPage() {
         quote: 'My daughter struggled with math, but gradually grew confident and made a great friend in her mentor',
       },
       {
-        name: 'High School, Pearland',
+        name: 'High School Parent, Pearland',
         quote:
           'My son’s grade in Pre-calculus started at a C+, and with some help, ended the semester with an A-',
       },
       {
-        name: 'Middle School, Katy',
+        name: 'Middle School Parent, Katy',
         quote:
           'Our mentor was respectful and excited to help my son.',
       },
