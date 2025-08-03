@@ -4,6 +4,10 @@ import Slider from 'react-slick'
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 
 const images = [
+  '/carousel-4.jpg',
+  '/carousel-3.jpg',
+  '/carousel-2.jpg',
+  '/carousel-1.png',
   '/carousel1.jpg',
   '/carousel2.jpg',
   '/carousel3.jpg',
