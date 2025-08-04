@@ -34,47 +34,53 @@ export default function HomePage() {
 </div>
 
 {/* From the Parents - Combined Section */}
+<div className="bg-white rounded-xl shadow-md max-w-5xl mx-auto">
+  {/* <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">From the Parents:</h2>
+  <div className="flex justify-center space-x-1 text-yellow-400 text-2xl mb-6">
+    {[...Array(5)].map((_, i) => (
+      <FaStar key={i} />
+    ))}
+  </div> */}
+
+{/* Review Grid Inside the Box */}
 <div className="bg-white p-8 rounded-xl shadow-md max-w-5xl mx-auto">
-  <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">From the Parents:</h2>
+  <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">What Parents Are Saying</h2>
   <div className="flex justify-center space-x-1 text-yellow-400 text-2xl mb-6">
     {[...Array(5)].map((_, i) => (
       <FaStar key={i} />
     ))}
   </div>
-
-{/* Review Grid Inside the Box */}
-<div className="grid md:grid-cols-3 gap-6">
-  {[
-    {
-      name: 'Middle School Parent, Bellaire',
-      quote: 'My son said he learned a lot. It was nice he took his shoes off. Very polite.',
-    },
-    {
-      name: 'Lower School Parent, West U',
-      quote:
-        'He got along well with the children and kept them engaged, which is sometimes a challenge!',
-    },
-    {
-      name: 'Middle School Parent, Sugar Land',
-      quote:
-        'Prepared for the session, Eased in well with the kid, Connected well, Calm and Composed, Patient',
-    },
-  ].map((review, i) => (
-    <div
-      key={i}
-      className="bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col justify-between"
-    >
-      <div>
-        <h3 className="font-semibold text-lg mb-1">{review.name}</h3>
-        <p className="text-sm text-gray-600 italic">“{review.quote}”</p>
+  <div className="grid md:grid-cols-3 gap-6">
+    {[
+      {
+        name: 'Middle School Parent, Bellaire',
+        quote: 'My son said he learned a lot. It was nice he took his shoes off. Very polite.',
+      },
+      {
+        name: 'Lower School Parent, West U',
+        quote: 'He got along well with the children and kept them engaged, which is sometimes a challenge!',
+      },
+      {
+        name: 'Middle School Parent, Sugar Land',
+        quote: 'Prepared for the session, Eased in well with the kid, Connected well, Calm and Composed, Patient',
+      },
+    ].map((review, idx) => (
+      <div
+        key={idx}
+        className="bg-gray-50 rounded-lg p-4 shadow-sm flex flex-col justify-between"
+      >
+        <div>
+          <h3 className="font-semibold text-lg mb-1">{review.name}</h3>
+          <p className="text-sm text-gray-600 italic">“{review.quote}”</p>
+        </div>
+        <div className="mt-3 flex text-yellow-400 text-lg">
+          {[...Array(5)].map((_, j) => (
+            <FaStar key={j} />
+          ))}
+        </div>
       </div>
-      <div className="mt-3 flex text-yellow-400 text-lg">
-        {[...Array(5)].map((_, j) => (
-          <FaStar key={j} />
-        ))}
-      </div>
-    </div>
-  ))}
+    ))}
+  </div>
 </div>
 </div>
 
