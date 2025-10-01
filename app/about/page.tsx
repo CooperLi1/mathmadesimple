@@ -11,7 +11,42 @@ const placeholderStaff = [
   {
     name: "Ian Ngo",
     image: "/ianngo.png",
-    bio: "Vice President, Co-Founder of Community Events, Strake Jesuit College Preparatory School",
+    bio: "Vice President, Strake Jesuit College Preparatory School",
+  },
+    {
+    name: "Aarav Mahendru",
+    image: "/aaravmahendru.jpg",
+    bio: "Director of Outreach and Communication, Lamar High School",
+  },
+      {
+    name: "Aaron Wang",
+    image: "/aaronwang.jpg",
+    bio: "Director of Finances, Strake Jesuit College Preparatory School",
+  },
+        {
+    name: "Braden Tollar",
+    image: "/bradentollar.png",
+    bio: "Director of South African Operations, Strake Jesuit College Preparatory School",
+  },
+        {
+    name: "Parrie Charoenrattanaruk",
+    image: "/parriecharoenrattanaruk.png",
+    bio: "Outreach Board, Strake Jesuit College Preparatory School",
+  },
+    {
+    name: "Mac Stratton",
+    image: "/macstratton.png",
+    bio: "Outreach Board, Strake Jesuit College Preparatory School",
+  },
+  {
+    name: "Tyler Horvath",
+    image: "/tylerhorvath.png",
+    bio: "Outreach Board, Lamar High School",
+  },
+    {
+    name: "Cooper Li",
+    image: "/cooperli.jpg",
+    bio: "Web Developer, Montgomery Blair High School",
   },
   {
     name: "Roger Li",
@@ -19,29 +54,9 @@ const placeholderStaff = [
     bio: "Strake Jesuit College Preparatory School",
   },
   {
-    name: "Mac Stratton",
-    image: "/macstratton.png",
-    bio: "Strake Jesuit College Preparatory School",
-  },
-  {
     name: "Anika Harpavat",
     image: "/anikaharpavat.png",
     bio: "Stanford University",
-  },
-  {
-    name: "Aarav Mahendru",
-    image: "/aaravmahendru.jpg",
-    bio: "Lamar High School",
-  },
-    {
-    name: "Aaron Wang",
-    image: "/aaronwang.jpg",
-    bio: "Strake Jesuit College Preparatory School",
-  },
-  {
-    name: "Tyler Horvath",
-    image: "/tylerhorvath.png",
-    bio: "Lamar High School",
   },
   {
     name: "Gabriel Fernandes",
@@ -77,6 +92,11 @@ const placeholderStaff = [
     name: "Amar Singh",
     image: "/amarsingh.png",
     bio: "Southwestern University",
+  },
+    {
+    name: "Preston Bennett",
+    image: "/prestonbennett.png",
+    bio: "Strake Jesuit College Preparatory School",
   }
 ];
 

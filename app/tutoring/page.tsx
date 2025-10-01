@@ -10,8 +10,8 @@ export default function TutoringPage() {
         <h1 className="text-4xl font-bold mb-2">Tutoring</h1>
         <p className="text-lg max-w-3xl mx-auto">
           At <strong>Math Made Simple</strong>, we guarantee one-on-one tutoring with top instructors
-          to ensure your child thrives. Whether it’s reviewing a tough test or getting ahead in class,
-          we’re here to help. See our options below and sign up to get started.
+          to ensure your child thrives. Whether it is reviewing for a tough test or getting ahead in class,
+          we are here to help. See our options below and sign up to get started.
         </p>
       </div>
 
@@ -51,7 +51,7 @@ export default function TutoringPage() {
             </tbody>
           </table>
           <p className="text-sm text-gray-600 text-center">
-            * $15 cancellation fee applies. 80% of tutoring fees go directly to tutors; 20% supports outreach and tools.
+            * $15 cancellation fee applies. 80% of tutoring fees go directly to tutors; 20% supports outreach and charities that fund education equality in underprivileged areas.
           </p>
         </div>
 

@@ -20,17 +20,17 @@ export default function HomePage() {
 
       <section className="text-xl font-semibold text-gray-800">
         <p>
-          With over <span className="text-blue-700 font-bold">30+ students</span> and an exciting team of instructors from Houston-area schools and top colleges, we’re here to help your child feel ahead of the curve in math.
+          With over <span className="text-blue-700 font-bold">30+ students</span> and an excited team of instructors from Houston-area schools and top colleges, we arere here to help your child feel ahead of the curve in math.
         </p>
       </section>
 
 <div className="max-w-md mx-auto space-y-2">
   <img
-    src="/growth.png"
+    src="/graph.png"
     alt="Student growth chart"
     className="rounded-lg shadow-md w-full"
   />
-  <p className="text-sm italic text-gray-600">Note: it goes over 100 because of extra credit</p>
+  {/* <p className="text-sm italic text-gray-600">Note: it goes over 100 because of extra credit</p> */}
 </div>
 
 {/* From the Parents - Combined Section */}
