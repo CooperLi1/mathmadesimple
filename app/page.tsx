@@ -20,7 +20,7 @@ export default function HomePage() {
 
       <section className="text-xl font-semibold text-gray-800">
         <p>
-          With over <span className="text-blue-700 font-bold">30+ students</span> and an excited team of instructors from Houston-area schools and top colleges, we arere here to help your child feel ahead of the curve in math.
+          With over <span className="text-blue-700 font-bold">30 students</span> and an excited team of instructors from Houston-area schools and top colleges, we are here to help your child feel ahead of the curve in math.
         </p>
       </section>
 
