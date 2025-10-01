@@ -3,6 +3,7 @@ import './globals.css'
 import Link from 'next/link'
 import { ReactNode } from 'react'
 import { manrope } from '@/app/ui/fonts';
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'Math Made Simple',
@@ -30,8 +31,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </header>
 
         {/* Main Content */}
+        
         <main className={`${manrope.className} max-w-5xl mx-auto px-6 py-10 backdrop-blur-md bg-white/80 rounded-lg shadow-xl my-10`}>
           {children}
+          <Analytics/>
         </main>
       </body>
     </html>
