@@ -191,12 +191,12 @@ export default function EventsPage() {
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <a
-                href="https://www.prathamusa.org/"
+                href="https://give.prathamusa.org/campaign/731568/donate?utm_source=math-made-simple&utm_medium=partners&utm_campaign=diwali-2025"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-4 py-2 rounded-full border border-blue-700 text-blue-700 hover:bg-blue-50 text-sm font-medium"
               >
-                Donate via Pratham USA
+                Donate via our special link
               </a>
               <a
                 href="mailto:keshav.harpavat@gmail.com"
